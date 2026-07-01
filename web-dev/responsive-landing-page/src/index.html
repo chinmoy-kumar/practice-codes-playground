@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Nav Bar -->
+    <nav class="flex justify-between items-center bg-emerald-500 px-5 py-5">
+      <div id="navLogo" class="flex gap-5">
+        <img class="max-h-30 max-w-15" src="../assets/logo.png" alt="logo" />
+        <span class="font-primary font-bold text-xl">Brand Logo</span>
+      </div>
+      <div class="lg:hidden" onclick="menuHandle()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+
+      <div id="menuList" class="hidden lg:flex">
+        <ul class="flex gap-10 text-xl">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Docs</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <button
+        class="hidden lg:block border border-gray-600 hover:border-gray-900 px-5 py-3 rounded-lg cursor-pointer"
+      >
+        <a href="#" class="">Log in</a>
+        <i class="fa-solid fa-right-to-bracket"></i>
+      </button>
+
+      <!-- mobile menu -->
+      <!-- inset-0 takes the full screen -->
+      <div id="menuDialog" class="hidden z-10 lg:hidden fixed bg-white inset-0">
+        <div class="flex justify-between items-center p-5">
+          <div id="navLogo" class="flex gap-5">
+            <img
+              class="max-h-30 max-w-15"
+              src="../assets/logo.png"
+              alt="logo"
+            />
+            <span class="font-primary font-bold text-xl">Brand Logo</span>
+          </div>
+          <div class="lg:hidden" onclick="menuHandle()">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+        </div>
+        <div>
+            <ul>
+                <li></li><a href="#" class="font-medium m-3 p-3 hover:bg-gray-50 rounded-lg block">Home</a></li>
+                <li></li><a href="#" class="font-medium m-3 p-3 hover:bg-gray-50 rounded-lg block">Pricing</a></li>
+                <li></li><a href="#" class="font-medium m-3 p-3 hover:bg-gray-50 rounded-lg block">Docs</a></li>
+                <li></li><a href="#" class="font-medium m-3 p-3 hover:bg-gray-50 rounded-lg block">Blog</a></li>
+                <li></li><a href="#" class="font-medium m-3 p-3 hover:bg-gray-50 rounded-lg block">Contact Us</a></li>
+            </ul>
+          </div>
+          <!-- divider -->
+          <div class="min-h-[1px] bg-gray-200"></div>
+
+          <button
+        class="block px-5 py-3 cursor-pointer hover:bg-gray-50 rounded-lg w-[98%] m-auto"
+      >
+        <a href="#" class="">Log in</a>
+        <i class="fa-solid fa-right-to-bracket"></i>
+      </button>
+      </div>
+    </nav>
+    <script src="./script.js"></script>
+  </body>
+</html>
