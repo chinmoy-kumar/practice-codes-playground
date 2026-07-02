@@ -11,7 +11,7 @@
   </head>
   <body>
     <!-- Nav Bar -->
-    <nav class="flex justify-between items-center bg-emerald-500 px-5 py-5">
+    <nav class="flex justify-between items-center px-5 py-5">
       <div id="navLogo" class="flex gap-5">
         <img class="max-h-30 max-w-15" src="../assets/logo.png" alt="logo" />
         <span class="font-primary font-bold text-xl">Brand Logo</span>
@@ -30,7 +30,7 @@
         </ul>
       </div>
       <button
-        class="hidden lg:block border border-gray-600 hover:border-gray-900 px-5 py-3 rounded-lg cursor-pointer"
+        class="hidden lg:block border border-gray-300 hover:border-gray-900 px-5 py-3 rounded-lg cursor-pointer transition"
       >
         <a href="#" class="">Log in</a>
         <i class="fa-solid fa-right-to-bracket"></i>
@@ -73,7 +73,16 @@
       </div>
     </nav>
     <main>
-
+      <div id="main" class="min-h-screen bg-linear-to-br from-purple-50 via-orange-50 to-transparent">
+        <div id="mainContainer" class="max-w-4xl bg-gray-700 mx-auto px-6 pb-32 flex flex-col">
+          <div id="versionBox" class="flex items-center gap-2 bg-amber-50 w-fit rounded-lg px-6 py-1 mt-6 border border-amber-600 shadow-xl hover:shadow-2xl hover:-translate-y-1 transition duration-300 group">
+            <div class="h-2 w-2 bg-amber-400 rounded-full border border-amber-700"></div>
+            <p class="text-amber-500">v0.31.2: <span class="text-amber-600">Find-in-page bug fixes</span></p>
+            <i class="fa fa-arrow-right text-amber-500 group-hover:translate-x-1 transform duration-200" aria-hidden="true"></i>
+          </div>
+          
+        </div>
+      </div>
     </main>
     <script src="./script.js"></script>
   </body>
